@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="LogIn.css">
+
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <form action="login.php" method="post">
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="client">Client</option>
+            <option value="sitter">Sitter</option>
+            <option value="handler">Handler</option>
+        </select><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="submit" value="Login">
+        <a href="SignUp.html">Dont Have an account? Signup</a>
+    </form>
+   
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Reset some basic elements for cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a natural box layout model to all elements */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* This sets 1rem to be 10px */
+}
+
+/* Set up a background image, use a linear gradient to overlay the image */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('Signup_background_img.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Style the form elements */
+form {
+    width: 100%;
+    max-width: 35rem; /* Cap the width of the form for larger screens */
+    background: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #222;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #5cb85c;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background-color: #4cae4c;
+}
+
+/* Style the anchor link as a button */
+form a {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: #5cb85c;
+    transition: color 0.3s ease;
+}
+
+form a:hover,
+form a:focus {
+    color: #4cae4c;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    form {
+        padding: 2rem;
+    }
+}
+
+/* Responsive design for very small screens */
+@media (max-width: 480px) {
+    form {
+        padding: 1rem;
+        box-shadow: none;
+    }
+}
